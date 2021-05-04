@@ -124,7 +124,7 @@ den Nacht begegnen könnte, in Gnaden bewahren
 
 # Wie funktioniert's?
 
-- Schritt 2: Textermittlung
+- Schritt 3: Textermittlung
     + **Übergangswahrscheinlichkeiten** zwischen Vektoren
     + Rückgriff auf (offline) trainiertes **Modell**
 
@@ -135,13 +135,20 @@ den Nacht begegnen könnte, in Gnaden bewahren
 <p>↓</p>
 </center>
 <center>
-<p style="display: inline-block; text-align: left;">
+<p style="display: inline-block; text-align: left; font-size: small; font-style: italic;">
 oberwähntem Tage mancher sorgliche Gedanke auf,<br/>
 &amp; wir seufzten öfters zum Heiland, daß Er uns<br/>
 vor allem Schaden, der uns etwa in der folgen-<br/>
 den Nacht begegnen könnte, in Gnaden bewahren
 </p>
 </center>
+
+---
+
+# Wie funktioniert's?
+
+- Schritt 3: Zeichenerkennung (Prinzip)
+![](https://files.gitter.im/5b97ae51d73408ce4fa7b1ee/LYSx/lstm-fraktur-arrows.png)
 
 ---
 
@@ -174,14 +181,14 @@ count: false
 # Training und *Ground Truth*
 
 - Basis der Erkennung: **trainierte** Modelle
-    + anhand manuell erstellter, fehlerfreier Daten
-- für Text
+    + anhand manuell erstellter, fehlerfreier Trainingsdaten
+- für Text:
     + Paare von Zeilenbildern und deren Text
-- für Struktur (Regionen und Zeilen)
+- für Struktur (Regionen und Zeilen):
     + Seitenbilder und Koordinaten der Struktureinheiten
-- Algorithmus verarbeitet Abbildungen
+- Algorithmus lernt Zuordnung
     + Wahrscheinlichkeitsverteilung über mgl. Zeichen und Zeichentrenner
-- bei ausreichender **Repräsentativität** des Trainingsmaterials → verbesserte Erkennung
+- bei ausreichender Menge und **Repräsentativität** der Daten → verbesserte Erkennung
 
 ---
 
@@ -252,14 +259,18 @@ legem confummans te<br/>
 
 class: part-slide
 
-# Larex
+# Ground-Truth-Erstellung
 
 
 ---
 
-# Larex
+# Ground-Truth-Erstellung: Larex
 
-- 
+- Webapplikation für bequeme/schnelle Transkription
+    + Struktur (Regionen und Zeilen)
+    + Text 
+
+![](https://github.com/OCR4all/LAREX/raw/master/documentation/larex.gif)
 
 ---
 
