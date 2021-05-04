@@ -193,6 +193,50 @@ count: false
 <img src="img/boernerianus_region.png" width="400px" />
 </center>
 
+- besondere Mischung aus Latein und Altgriechisch, Texterkennung mit Tesseract:
+
+<center>
+<p style="display: inline-block; text-align: left;">
+legis cuftodiat nonne<br/>
+vouov. ζυλασση Ovi<br/>
+circumcifionem repu<br/>
+περιτομὴν Λογεισ<br/>
+legem confummans te<br/>
+νομον πτελουσα σε
+</p>
+</center>
+
+---
+
+# Training und *Ground Truth*: Beispiel
+
+- Ergebnis auf den ersten Blick nicht schlecht, jedoch
+
+<table><colgroup><col /><col /></colgroup>
+<tbody>
+<tr>
+<th colspan="1">Ground Truth</th>
+<th colspan="1">OCR Latin+Greek</th></tr>
+<tr>
+<td>
+<p title="">legis cu<span class="cdiff8 diff" style="color: rgb(0,128,0);" title="">ſ</span>todiat nonne</p></td>
+<td>legis cu<span class="cdiff8 diff" style="color: rgb(255,0,0);" title="">f</span>todiat nonne</td></tr>
+<tr>
+<td><span style="color: rgb(0,128,0);"><span class="cdiff25 diff" title="">&nu;</span><span class="cdiff26 diff" title="">&omicron;</span><span class="cdiff27 diff" title="">&mu;</span><span class="cdiff28 diff" title="">&omicron;</span><span class="cdiff29 diff" title="">&upsilon;</span></span>. <span class="cdiff32 diff" style="color: rgb(0,128,0);" title="">&phi;</span>&upsilon;&lambda;&alpha;&sigma;&sigma;&eta; <span style="color: rgb(0,128,0);"><span class="cdiff40 diff" title="">&Omicron;</span><span class="cdiff41 diff" title="">&upsilon;</span><span class="cdiff42 diff" title="">&chi;</span><span class="cdiff43 diff" title="">&epsilon;</span><span class="cdiff44 diff" title="">&iota;</span></span></td>
+<td><span style="color: rgb(255,0,0);"><span class="cdiff25 diff" title="">v</span><span class="cdiff26 diff" title="">o</span><span class="cdiff27 diff" title="">u</span><span class="cdiff28 diff" title="">o</span><span class="cdiff29 diff" title="">v</span></span>. <span class="cdiff32 diff" style="color: rgb(255,0,0);" title="">&zeta;</span>&upsilon;&lambda;&alpha;&sigma;&sigma;&eta; <span style="color: rgb(255,0,0);"><span class="cdiff40 diff" title="">O</span><span class="cdiff41 diff" title="">v</span><span class="cdiff42 diff" title="">i</span><span class="cdiff43 diff ellipsis">&middot;</span><span class="cdiff44 diff ellipsis">&middot;</span></span></td></tr>
+<tr>
+<td>circumci<span class="cdiff57 diff" style="color: rgb(0,128,0);" title="">ſ</span>ionem repu</td>
+<td>circumci<span class="cdiff57 diff" style="color: rgb(255,0,0);" title="">f</span>ionem repu</td></tr>
+<tr>
+<td>&pi;&epsilon;&rho;&iota;&tau;&omicron;&mu;<span class="cdiff79 diff" style="color: rgb(0,128,0);" title="">&eta;</span>&nu; &Lambda;&omicron;&gamma;&epsilon;&iota;&sigma;</td>
+<td>&pi;&epsilon;&rho;&iota;&tau;&omicron;&mu;<span class="cdiff79 diff" style="color: rgb(255,0,0);" title="">ὴ</span>&nu; &Lambda;&omicron;&gamma;&epsilon;&iota;&sigma;</td></tr>
+<tr>
+<td>legem con<span class="cdiff101 diff" style="color: rgb(0,128,0);" title="">ſ</span>ummans te</td>
+<td>legem con<span class="cdiff101 diff" style="color: rgb(255,0,0);" title="">f</span>ummans te</td></tr>
+<tr>
+<td>&nu;&omicron;&mu;&omicron;&nu; <span class="cdiff121 diff ellipsis" style="color: rgb(0,128,0);">&middot;</span><span style="color: rgb(0,0,0);">&tau;</span>&epsilon;&lambda;&omicron;&upsilon;&sigma;&alpha; &sigma;&epsilon;</td>
+<td>&nu;&omicron;&mu;&omicron;&nu; <span class="cdiff121 diff" style="color: rgb(255,0,0);" title="">&pi;</span>&tau;&epsilon;&lambda;&omicron;&upsilon;&sigma;&alpha; &sigma;&epsilon;</td></tr></tbody></table>
+
 ---
 
 class: part-slide
