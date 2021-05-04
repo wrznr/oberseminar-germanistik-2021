@@ -302,18 +302,34 @@ legem confummans te<br/>
 - Optionen
     + **Transfer-Learning**
         * Anpassung eines existierenden, ähnlichen Modells mit wenigen Zeilen GT auf spezifische Vorlage
-        * z.B. [Konzilsprotokolle Universitätsarchiv Greifswald](https://zenodo.org/record/215383#.YJFuPHVfjDs): 8 770 Zeilen GT
     + **generische Modelle**
         * auf Basis großer Mengen diversen GTs trainierte Modelle mit Allgemeinheitsanspruch 
         * schwierig im Bereich HTR
     + **synthetisches Training**
         * mit Hilfe großer Textmengen und verschiedener Computerschriftarten automatisch erzeugter GT
+        * Erzeugung einer realistischeren Optik durch
     + **Augmentierung**
         * größere Modellrobustheit und Variantenstabilität durch gezieltes Verrauschen
+        * Schrägstellung, Spiegelung, Störpixel, horizontale und vertikale Verzerrung etc.
+
+---
+
+# Training und *Ground Truth*: HTR
 
 <center>
-<img src="https://camo.githubusercontent.com/06493331adfcac6c297a8cd048fcb77742088085c31cf7c5046c4c17c06d4bbc/68747470733a2f2f66696c65732e6769747465722e696d2f77727a6e722f744153492f4f43522d442d494d472d4445535045434b5f303030355f72315f72316c32362e706e67" width="300px"/>
+<img src="https://camo.githubusercontent.com/06493331adfcac6c297a8cd048fcb77742088085c31cf7c5046c4c17c06d4bbc/68747470733a2f2f66696c65732e6769747465722e696d2f77727a6e722f744153492f4f43522d442d494d472d4445535045434b5f303030355f72315f72316c32362e706e67" width="500px"/>
 </center>
+
+- z.B. [Konzilsprotokolle Universitätsarchiv Greifswald](https://zenodo.org/record/215383#.YJFuPHVfjDs)
+    + 8 770 Zeilen GT
+    + einzeln segmentiert
+- Training und Test mit Tesseract
+
+```
+$ make training MODEL_NAME=htr PSM=13 MAX_ITERATIONS=30000
+$ tesseract tline.png - -l htr --psm 13
+sowohl, als auch eb bei der Schrift etwas zu er-
+```
 
 ---
 
@@ -336,6 +352,7 @@ class: part-slide
 class: part-slide
 
 # Diskussion und lose Enden
+
 
 
 
