@@ -69,13 +69,29 @@ count: false
 - Ziel: Transformation von Bilddaten in maschinenlesbaren Volltext
 
 <center>
-<img src="img/nbg_region.png" width="300px" />
+<img src="img/nbg_region.png" width="400px" />
 </center>
 <center>
 <p>↓</p>
 </center>
 <center>
-<img src="img/nbg_region.png" width="300px" />
+<img src="img/nbg_region.png" width="400px" />
+</center>
+
+---
+
+# Wie funktioniert's?
+
+- Schritt 1: Zeilenerkennung
+
+<center>
+<img src="img/nbg_region.png" width="400px" />
+</center>
+<center>
+<p>↓</p>
+</center>
+<center>
+<img src="img/nbg_lines.png" width="400px" />
 </center>
 
 ---
