@@ -77,9 +77,9 @@ count: false
 </center>
 <center>
 <p>
-oberwähntem Tage mancher sorgliche Gedanke auf,
-&amp; wir seufzten öfters zum Heiland, daß Er uns
-vor allem Schaden, der uns etwa in der folgen-
+oberwähntem Tage mancher sorgliche Gedanke auf,<br/>
+&amp; wir seufzten öfters zum Heiland, daß Er uns<br/>
+vor allem Schaden, der uns etwa in der folgen-<br/>
 den Nacht begegnen könnte, in Gnaden bewahren
 </p>
 </center>
@@ -126,6 +126,7 @@ den Nacht begegnen könnte, in Gnaden bewahren
 
 - Schritt 2: Textermittlung
     + **Übergangsahrscheinlichkeiten** zwischen Vektoren
+    + Rückgriff auf (offline) trainiertes **Modell**
     + Wahrscheinlichkeitsverteilung über mgl. Zeichen und Zeichentrenner
 
 <center>
@@ -136,9 +137,9 @@ den Nacht begegnen könnte, in Gnaden bewahren
 </center>
 <center>
 <p>
-oberwähntem Tage mancher sorgliche Gedanke auf,
-&amp; wir seufzten öfters zum Heiland, daß Er uns
-vor allem Schaden, der uns etwa in der folgen-
+oberwähntem Tage mancher sorgliche Gedanke auf,<br/>
+&amp; wir seufzten öfters zum Heiland, daß Er uns<br/>
+vor allem Schaden, der uns etwa in der folgen-<br/>
 den Nacht begegnen könnte, in Gnaden bewahren
 </p>
 </center>
