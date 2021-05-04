@@ -124,7 +124,7 @@ den Nacht begegnen könnte, in Gnaden bewahren
 
 # Wie funktioniert's?
 
-- Schritt 2: Textermittlung
+- Schritt 3: Textermittlung
     + **Übergangswahrscheinlichkeiten** zwischen Vektoren
     + Rückgriff auf (offline) trainiertes **Modell**
 
@@ -151,6 +151,7 @@ den Nacht begegnen könnte, in Gnaden bewahren
     + [**Tesseract**](https://github.com/tesseract-ocr/tesseract): komplettes Open-Source-Paket
         * regelbasierte Bildvorverarbeitung und Layouterkennung
         * datengetriebene Texterkennung (unterstützt > 100 Sprachen)
+        * Ease-of-Use-Training eigener Modelle
         * für OCR und **HTR** verwendbar
     + [**OCRopy**](https://github.com/ocropus/ocropy): umfangreiches Open-Source-Paket
         * regelbasierte Bildvorverarbeitung und Layouterkennung
@@ -241,23 +242,73 @@ legem confummans te<br/>
 
 - Anteil fehlerhaft erkannter Zeichen bei 12 %
     + Mischung Latein und Altgriechisch
+    + langes s in Antiqua
 
 ---
 
 # Training und *Ground Truth*: Beispiel
 
-- nach Transkription von 973 Zeilen durch Juan Garcés
+- nach Transkription von 973 Zeilen durch Juan Garcés und
+- 30 000 Trainingsschritten
+
+<center>
+<div style="display: inline-block; text-align: left; font-size:16pt">
+<table><colgroup><col /><col /></colgroup>
+<tbody>
+<tr>
+<th colspan="1">Ground Truth</th>
+<th colspan="1">OCR GT-Finetuning</th></tr>
+<tr>
+<td>legis cu<span class="cdiff8 diff" style="color: rgb(0,0,0);" title="">ſ</span>todiat nonne</td>
+<td>legis cu<span class="cdiff8 diff" style="color: rgb(0,0,0);" title="">ſ</span>todiat nonne</td></tr>
+<tr>
+<td><span style="color: rgb(0,0,0);"><span class="cdiff25 diff" title="">&nu;</span><span class="cdiff26 diff" title="">&omicron;</span><span class="cdiff27 diff" title="">&mu;</span><span class="cdiff28 diff" title="">&omicron;</span><span class="cdiff29 diff" title="">&upsilon;</span>. <span class="cdiff32 diff" title="">&phi;</span>&upsilon;&lambda;&alpha;&sigma;&sigma;&eta; <span class="cdiff40 diff" title="">&Omicron;</span><span class="cdiff41 diff" title="">&upsilon;</span><span class="cdiff42 diff" title="">&chi;</span><span class="cdiff43 diff" title="">&epsilon;</span><span class="cdiff44 diff" title="">&iota;</span></span></td>
+<td><span style="color: rgb(0,0,0);"><span class="cdiff25 diff" title="">&nu;</span><span class="cdiff26 diff" title="">&omicron;</span><span class="cdiff27 diff" title="">&mu;</span><span class="cdiff28 diff" title="">&omicron;</span><span class="cdiff29 diff" title="">&upsilon;</span>. <span class="cdiff32 diff" title="">&phi;</span>&upsilon;&lambda;&alpha;&sigma;&sigma;&eta; <span class="cdiff40 diff" title="">&Omicron;</span><span class="cdiff41 diff" title="">&upsilon;</span><span class="cdiff42 diff" title="">&chi;</span><span class="cdiff43 diff" title="">&epsilon;</span><span class="cdiff44 diff" title="">&iota;</span></span></td></tr>
+<tr>
+<td><span style="color: rgb(0,0,0);">circumci<span class="cdiff57 diff" title="">ſ</span>ionem repu</span></td>
+<td><span style="color: rgb(0,0,0);">circumci<span class="cdiff57 diff" title="">ſ</span>ionem repu</span></td></tr>
+<tr>
+<td><span style="color: rgb(0,0,0);">&pi;&epsilon;&rho;&iota;&tau;&omicron;&mu;<span class="cdiff79 diff" title="">&eta;</span>&nu; <span style="color: rgb(0,128,0);">&Lambda;</span>&omicron;&gamma;&epsilon;&iota;&sigma;</span></td>
+<td><span style="color: rgb(0,0,0);">&pi;&epsilon;&rho;&iota;&tau;&omicron;&mu;<span class="cdiff79 diff" title="">&eta;</span>&nu; <span class="cdiff82 diff" style="color: rgb(255,0,0);" title="">&Alpha;</span>&omicron;&gamma;&epsilon;&iota;&sigma;</span></td></tr>
+<tr>
+<td><span style="color: rgb(0,0,0);">legem con<span class="cdiff101 diff" title="">ſ</span>ummans te</span></td>
+<td><span style="color: rgb(0,0,0);">legem con<span class="cdiff101 diff" title="">ſ</span>ummans te</span></td></tr>
+<tr>
+<td>&nu;&omicron;&mu;&omicron;&nu; <span style="color: rgb(0,0,0);">&tau;</span>&epsilon;&lambda;&omicron;&upsilon;&sigma;&alpha; <span style="color: rgb(0,128,0);">&sigma;</span>&epsilon;</td>
+<td>&nu;&omicron;&mu;&omicron;&nu; <span style="color: rgb(0,0,0);">&tau;</span>&epsilon;&lambda;&omicron;&upsilon;&sigma;&alpha; <span style="color: rgb(255,0,0);">&omicron;</span>&epsilon;</td></tr></tbody></table>
+</div></center>
+
+- Reduktion der Fehler auf zwei Zeichen
+    + saubere Trennung zwischen Latein und Altgriechisch
+    + langes s in Antiqua
+
+---
+
+# Training und *Ground Truth*: Optimierungen
+
+- Ergebnis des Experiments: **hochspezifisches** Modell
+    + Aufwand im Allgemeinen nicht leistbar
+- Optionen
+    + **Transfer-Learning**
+        * Anpassung eines existierenden, ähnlichen Modells mit wenigen Zeilen GT auf spezifische Vorlage
+        * z.B. [Konzilsprotokolle Universitätsarchiv](https://zenodo.org/record/215383#.YJFuPHVfjDs)
+    + **generische Modelle**
+        * auf Basis großer Mengen diversen GTs trainierte Modelle mit Allgemeinheitsanspruch 
+        * schwierig im Bereich HTR
+    + **synthetisches Training**
+        * mit Hilfe großer Textmengen und verschiedener Computerschriftarten automatisch erzeugter GT
+    + **Augmentierung**
 
 ---
 
 class: part-slide
 
-# Larex
+# Struktur- und Texterfassung mit Larex
 
 
 ---
 
-# Larex
+# Struktur- und Texterfassung mit Larex
 
 - 
 
