@@ -70,7 +70,7 @@ count: false
 
 .cols[
 .fourty[
-- Test
+<img src="img/nbg_region.png" width="300px" />
 ]
 .twenty[
 -Test
