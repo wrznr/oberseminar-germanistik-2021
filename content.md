@@ -67,6 +67,7 @@ count: false
 # Wie funktioniert's?
 
 - Ziel: Transformation von Bilddaten in maschinenlesbaren Volltext
+    + schrittweise Verarbeitung
 
 <center>
 <img src="img/nbg_region.png" width="400px" />
@@ -75,7 +76,12 @@ count: false
 <p>↓</p>
 </center>
 <center>
-<img src="img/nbg_region.png" width="400px" />
+<p>
+oberwähntem Tage mancher sorgliche Gedanke auf,
+&amp; wir seufzten öfters zum Heiland, daß Er uns
+vor allem Schaden, der uns etwa in der folgen-
+den Nacht begegnen könnte, in Gnaden bewahren
+</p>
 </center>
 
 ---
@@ -123,7 +129,12 @@ count: false
 <p>↓</p>
 </center>
 <center>
-<img src="img/nbg_grid.png" width="400px" />
+<p>
+oberwähntem Tage mancher sorgliche Gedanke auf,
+&amp; wir seufzten öfters zum Heiland, daß Er uns
+vor allem Schaden, der uns etwa in der folgen-
+den Nacht begegnen könnte, in Gnaden bewahren
+</p>
 </center>
 
 ---
