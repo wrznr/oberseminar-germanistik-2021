@@ -147,11 +147,16 @@ den Nacht begegnen könnte, in Gnaden bewahren
 
 # Wie funktioniert's?
 
+.cols[
+.fourty[
 - Schritt 3: Zeichenerkennung (Prinzip)
-
-<center>
+]
+.sixty[
+<p style="margin-top:-20px">
 <img src="https://files.gitter.im/5b97ae51d73408ce4fa7b1ee/LYSx/lstm-fraktur-arrows.png" width="550px" style="transform:rotate(90deg);"/>
-</center>
+</p>
+]
+]
 
 ---
 
