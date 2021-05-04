@@ -212,6 +212,7 @@ legem confummans te<br/>
 
 - Ergebnis auf den ersten Blick nicht schlecht, jedoch
 
+<center>
 <div style="display: inline-block; text-align: left; font-size:12pt">
 <table><colgroup><col /><col /></colgroup>
 <tbody>
@@ -219,8 +220,7 @@ legem confummans te<br/>
 <th colspan="1">Ground Truth</th>
 <th colspan="1">OCR Latin+Greek</th></tr>
 <tr>
-<td>
-<p title="" style="display: inline-block; text-align: left; font-size:12pt">legis cu<span class="cdiff8 diff" style="color: rgb(0,128,0);" title="">ſ</span>todiat nonne</p></td>
+<td>legis cu<span class="cdiff8 diff" style="color: rgb(0,128,0);" title="">ſ</span>todiat nonne</td>
 <td>legis cu<span class="cdiff8 diff" style="color: rgb(255,0,0);" title="">f</span>todiat nonne</td></tr>
 <tr>
 <td><span style="color: rgb(0,128,0);"><span class="cdiff25 diff" title="">&nu;</span><span class="cdiff26 diff" title="">&omicron;</span><span class="cdiff27 diff" title="">&mu;</span><span class="cdiff28 diff" title="">&omicron;</span><span class="cdiff29 diff" title="">&upsilon;</span></span>. <span class="cdiff32 diff" style="color: rgb(0,128,0);" title="">&phi;</span>&upsilon;&lambda;&alpha;&sigma;&sigma;&eta; <span style="color: rgb(0,128,0);"><span class="cdiff40 diff" title="">&Omicron;</span><span class="cdiff41 diff" title="">&upsilon;</span><span class="cdiff42 diff" title="">&chi;</span><span class="cdiff43 diff" title="">&epsilon;</span><span class="cdiff44 diff" title="">&iota;</span></span></td>
@@ -237,6 +237,29 @@ legem confummans te<br/>
 <tr>
 <td>&nu;&omicron;&mu;&omicron;&nu; <span class="cdiff121 diff ellipsis" style="color: rgb(0,128,0);">&middot;</span><span style="color: rgb(0,0,0);">&tau;</span>&epsilon;&lambda;&omicron;&upsilon;&sigma;&alpha; &sigma;&epsilon;</td>
 <td>&nu;&omicron;&mu;&omicron;&nu; <span class="cdiff121 diff" style="color: rgb(255,0,0);" title="">&pi;</span>&tau;&epsilon;&lambda;&omicron;&upsilon;&sigma;&alpha; &sigma;&epsilon;</td></tr></tbody></table></div>
+</center>
+
+- Anteil fehlerhaft erkannter Zeichen bei 12 %
+    + Mischung Latein und Altgriechisch
+
+---
+
+# Training und *Ground Truth*: Beispiel
+
+- nach Transkription von 973 Zeilen durch Juan Garcés
+
+---
+
+class: part-slide
+
+# Larex
+
+
+---
+
+# Larex
+
+- 
 
 ---
 
