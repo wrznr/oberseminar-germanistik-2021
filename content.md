@@ -75,12 +75,14 @@ count: false
 <center>
 <p>↓</p>
 </center>
-<p>
+<center>
+<p style="display: inline-block; text-align: left;">
 oberwähntem Tage mancher sorgliche Gedanke auf,<br/>
 &amp; wir seufzten öfters zum Heiland, daß Er uns<br/>
 vor allem Schaden, der uns etwa in der folgen-<br/>
 den Nacht begegnen könnte, in Gnaden bewahren
 </p>
+</center>
 
 ---
 
@@ -123,9 +125,8 @@ den Nacht begegnen könnte, in Gnaden bewahren
 # Wie funktioniert's?
 
 - Schritt 2: Textermittlung
-    + **Übergangsahrscheinlichkeiten** zwischen Vektoren
+    + **Übergangswahrscheinlichkeiten** zwischen Vektoren
     + Rückgriff auf (offline) trainiertes **Modell**
-    + Wahrscheinlichkeitsverteilung über mgl. Zeichen und Zeichentrenner
 
 <center>
 <img src="img/nbg_grid.png" width="400px" />
@@ -133,12 +134,33 @@ den Nacht begegnen könnte, in Gnaden bewahren
 <center>
 <p>↓</p>
 </center>
-<p>
+<center>
+<p style="display: inline-block; text-align: left;">
 oberwähntem Tage mancher sorgliche Gedanke auf,<br/>
 &amp; wir seufzten öfters zum Heiland, daß Er uns<br/>
 vor allem Schaden, der uns etwa in der folgen-<br/>
 den Nacht begegnen könnte, in Gnaden bewahren
 </p>
+</center>
+
+---
+
+# Wie funktioniert's?
+
+- Software
+    + [**Tesseract**](https://github.com/tesseract-ocr/tesseract): komplettes Open-Source-Paket
+        * regelbasierte Bildvorverarbeitung und Layouterkennung
+        * datengetriebene Texterkennung (unterstützt > 100 Sprachen)
+        * für OCR und **HTR** verwendbar
+    + [**OCRopy**](https://github.com/ocropus/ocropy): umfangreiches Open-Source-Paket
+        * regelbasierte Bildvorverarbeitung und Layouterkennung
+        * datengetriebene Texterkennung (nur sehr wenige Modelle vorhanden)
+        * für OCR und **HTR** verwendbar
+        * prominente Ableger: [**kraken**](https://kraken.re) und [**Calamari**](https://github.com/Calamari-OCR/calamari)
+    + [**OCR-D**](https://ocr-d.de/): Workflow-Engine
+        * Orchestrierung verschiedener Open-Source-Pakete zu stabilen Workflows
+        * gleichzeitig DFG-Förderprogramm zur Verbesserung von OCR für historische Drucke
+        * SLUB als maßgebliche Entwicklungseinrichtung
 
 ---
 
@@ -158,11 +180,18 @@ count: false
 - für Struktur (Regionen und Zeilen)
     + Seitenbilder und Koordinaten der Struktureinheiten
 - Algorithmus verarbeitet Abbildungen
+    + Wahrscheinlichkeitsverteilung über mgl. Zeichen und Zeichentrenner
 - bei ausreichender **Repräsentativität** des Trainingsmaterials → verbesserte Erkennung
 
 ---
 
 # Training und *Ground Truth*: Beispiel
+
+- [Matthäi-Edition](https://digital.slub-dresden.de/werkansicht/dlf/429482/) des [Codex Boernerianus](https://digital.slub-dresden.de/werkansicht/dlf/2966/1/)
+
+<center>
+<img src="img/boernerianus_region.png" width="400px" />
+</center>
 
 ---
 
