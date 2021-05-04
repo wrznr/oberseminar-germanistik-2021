@@ -6,11 +6,11 @@ layout: true
   <table>
     <tr>
       <td style="text-align:right">Sächsische Landesbibliothek – Staats- und Universitätsbibliothek</td>
-      <td>Date</td>
+      <td>4. Mai 2021</td>
       <td style="text-align:right"><a href="https://www.slub-dresden.de/">www.slub-dresden.de</a></td>
     </tr>
     <tr>
-      <td style="text-align:right">Referat 2.5</td>
+      <td style="text-align:right">Referate 4.3 &amp; 2.5</td>
       <td />
     </tr>
   </table>
@@ -20,15 +20,17 @@ layout: true
   <table>
     <tr>
       <td style="text-align:left"><b>Kay-Michael Würzner</b></td>
+      <td style="text-align:left"><b>Robert Sachunsky</b></td>
     </tr>
     <tr>
-      <td style="text-align:left">Referat 2.5</td>
+      <td style="text-align:left">Referat Open Science</td>
+      <td style="text-align:left">Referat Digitale Objekte</td>
     </tr>
     <tr>
-      <td style="font-size:8pt"><b>Date</b></td>
+      <td style="font-size:8pt"><b>4. Mai 2021</b></td>
     </tr>
     <tr>
-      <td style="font-size:8pt">Event</td>
+      <td style="font-size:8pt">Oberseminar Germanistik, TU Dresden</td>
     </tr>
   </table>
 </div>
@@ -38,30 +40,30 @@ layout: true
 class: title-slide
 count: false
 
-# Title
-## Subtitle
+# Grundlagen der automatischen Vervolltextung handschriftlicher Materialien 
+## am Beispiel der Herrnhuter Nachrichten aus der Brüdergemeine
 
 ---
 
-# Overview
+# Überblick
 
-- Section 1
-  + Subsection 1
-- Section 2
+- Handschriftenerkennung: Wie funktioniert's?
+- Training und *Ground Truth*
+- Struktur- und Texterfassung mit Larex
 
 ---
 
 class: part-slide
 count: false
 
-# Topic 1
+# Handschriftenerkennung: Wie funktioniert's?
 
 ---
 
 class: part-slide
 
-# Many thanks for your attention!
+# Vielen Dank für Ihre Aufmerksamkeit
 
 <center>
-<a href="https://wrznr.github.io/slide-template/">wrznr.github.io/slide-template</a>
+<a href="https://wrznr.github.io/oberseminar-germanistik-2021">wrznr.github.io/oberseminar-germanistik-2021</a>
 </center>
