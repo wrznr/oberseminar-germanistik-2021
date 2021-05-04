@@ -196,7 +196,7 @@ count: false
 - Texterkennung mit Tesseract:
 
 <center>
-<p style="display: inline-block; text-align: left; font-size:12pt">
+<p style="display: inline-block; text-align: left; font-size:14pt">
 legis cuftodiat nonne<br/>
 vouov. ζυλασση Ovi<br/>
 circumcifionem repu<br/>
@@ -213,7 +213,7 @@ legem confummans te<br/>
 - Ergebnis auf den ersten Blick nicht schlecht, jedoch
 
 <center>
-<div style="display: inline-block; text-align: left; font-size:12pt">
+<div style="display: inline-block; text-align: left; font-size:16pt">
 <table><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
