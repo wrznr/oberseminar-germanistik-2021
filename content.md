@@ -193,10 +193,10 @@ count: false
 <img src="img/boernerianus_region.png" width="400px" />
 </center>
 
-- besondere Mischung aus Latein und Altgriechisch, Texterkennung mit Tesseract:
+- Texterkennung mit Tesseract:
 
 <center>
-<p style="display: inline-block; text-align: left;">
+<p style="display: inline-block; text-align: left; font-size:8pt">
 legis cuftodiat nonne<br/>
 vouov. ζυλασση Ovi<br/>
 circumcifionem repu<br/>
@@ -212,6 +212,7 @@ legem confummans te<br/>
 
 - Ergebnis auf den ersten Blick nicht schlecht, jedoch
 
+<div style="display: inline-block; text-align: left; font-size:8pt">
 <table><colgroup><col /><col /></colgroup>
 <tbody>
 <tr>
@@ -235,7 +236,7 @@ legem confummans te<br/>
 <td>legem con<span class="cdiff101 diff" style="color: rgb(255,0,0);" title="">f</span>ummans te</td></tr>
 <tr>
 <td>&nu;&omicron;&mu;&omicron;&nu; <span class="cdiff121 diff ellipsis" style="color: rgb(0,128,0);">&middot;</span><span style="color: rgb(0,0,0);">&tau;</span>&epsilon;&lambda;&omicron;&upsilon;&sigma;&alpha; &sigma;&epsilon;</td>
-<td>&nu;&omicron;&mu;&omicron;&nu; <span class="cdiff121 diff" style="color: rgb(255,0,0);" title="">&pi;</span>&tau;&epsilon;&lambda;&omicron;&upsilon;&sigma;&alpha; &sigma;&epsilon;</td></tr></tbody></table>
+<td>&nu;&omicron;&mu;&omicron;&nu; <span class="cdiff121 diff" style="color: rgb(255,0,0);" title="">&pi;</span>&tau;&epsilon;&lambda;&omicron;&upsilon;&sigma;&alpha; &sigma;&epsilon;</td></tr></tbody></table></div>
 
 ---
 
