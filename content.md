@@ -26,11 +26,11 @@ layout: true
       <td style="text-align:left">Referat Open Science</td>
       <td style="text-align:left">Referat Digitale Objekte</td>
     </tr>
+    <tr/>
+    <tr/>
+    <tr/>
+    <tr/>
     <tr>
-      <td />
-      <td />
-      <td />
-      <td />
       <td style="font-size:8pt"><b>4. Mai 2021</b></td>
     </tr>
     <tr>
@@ -66,8 +66,7 @@ count: false
 
 # Wie funktioniert's?
 
-- Ziel:
-    + Transformation von Bilddaten in maschinenlesbaren Volltext
+- Ziel: Transformation von Bilddaten in maschinenlesbaren Volltext
 
 .cols[
 .fourty[
