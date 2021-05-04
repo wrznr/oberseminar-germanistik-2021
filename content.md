@@ -27,6 +27,10 @@ layout: true
       <td style="text-align:left">Referat Digitale Objekte</td>
     </tr>
     <tr>
+      <td />
+      <td />
+      <td />
+      <td />
       <td style="font-size:8pt"><b>4. Mai 2021</b></td>
     </tr>
     <tr>
@@ -41,7 +45,7 @@ class: title-slide
 count: false
 
 # Grundlagen der automatischen Vervolltextung handschriftlicher Materialien 
-## am Beispiel der Herrnhuter Nachrichten aus der Brüdergemeine
+## am Beispiel der Nachrichten aus der Brüdergemeine
 
 ---
 
@@ -57,6 +61,26 @@ class: part-slide
 count: false
 
 # Handschriftenerkennung: Wie funktioniert's?
+
+---
+
+# Wie funktioniert's?
+
+- Ziel:
+    + Transformation von Bilddaten in maschinenlesbaren Volltext
+
+.cols[
+.fourty[
+- Test
+]
+.twenty[
+-Test
+]
+.fourty[
+-Test
+]
+]
+---
 
 ---
 
