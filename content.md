@@ -68,17 +68,16 @@ count: false
 
 - Ziel: Transformation von Bilddaten in maschinenlesbaren Volltext
 
-.cols[
-.fourty[
+<center>
 <img src="img/nbg_region.png" width="300px" />
-]
-.twenty[
--Test
-]
-.fourty[
--Test
-]
-]
+</center>
+<center>
+<p>↓</p>
+</center>
+<center>
+<img src="img/nbg_region.png" width="300px" />
+</center>
+
 ---
 
 ---
