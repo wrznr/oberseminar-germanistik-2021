@@ -153,7 +153,7 @@ den Nacht begegnen könnte, in Gnaden bewahren
 ]
 .sixty[
 <p style="margin-top:-20px">
-<img src="https://files.gitter.im/5b97ae51d73408ce4fa7b1ee/LYSx/lstm-fraktur-arrows.png" width="550px" style="transform:rotate(90deg);"/>
+<img src="https://files.gitter.im/5b97ae51d73408ce4fa7b1ee/LYSx/lstm-fraktur-arrows.png" width="650px" style="transform:rotate(90deg);"/>
 </p>
 ]
 ]
@@ -357,7 +357,16 @@ class: part-slide
 
 # Diskussion und lose Enden
 
-
+- verlässliche, automatische Handschriftenerkennung in Reichweite
+- GT-Problematik
+    + gemischtes Vorgehen, „echte“ Ground Truth
+        * Larex zur Transkription
+        * Podcasts zur indirekten Transkription
+        * Einbindung von Bürgerwissenschaftlerinnen und -wissenschaftler sowie Studierende
+    + synthetische Ground Truth
+        * gute Kurrentschriften gesucht!
+- Digital Herrnhut
+    + ...
 
 
 ---
