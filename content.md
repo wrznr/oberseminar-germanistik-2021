@@ -96,6 +96,36 @@ count: false
 
 ---
 
+# Wie funktioniert's?
+
+- Schritt 2: Vektorisierung
+
+<center>
+<img src="img/nbg_lines.png" width="400px" />
+</center>
+<center>
+<p>↓</p>
+</center>
+<center>
+<img src="img/nbg_grid.png" width="400px" />
+</center>
+
+---
+
+# Wie funktioniert's?
+
+- Schritt 2: Textermittlung
+
+<center>
+<img src="img/nbg_grid.png" width="400px" />
+</center>
+<center>
+<p>↓</p>
+</center>
+<center>
+<img src="img/nbg_grid.png" width="400px" />
+</center>
+
 ---
 
 class: part-slide
