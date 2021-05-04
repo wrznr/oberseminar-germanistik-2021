@@ -75,14 +75,12 @@ count: false
 <center>
 <p>↓</p>
 </center>
-<center>
 <p>
 oberwähntem Tage mancher sorgliche Gedanke auf,<br/>
 &amp; wir seufzten öfters zum Heiland, daß Er uns<br/>
 vor allem Schaden, der uns etwa in der folgen-<br/>
 den Nacht begegnen könnte, in Gnaden bewahren
 </p>
-</center>
 
 ---
 
@@ -135,14 +133,36 @@ den Nacht begegnen könnte, in Gnaden bewahren
 <center>
 <p>↓</p>
 </center>
-<center>
 <p>
 oberwähntem Tage mancher sorgliche Gedanke auf,<br/>
 &amp; wir seufzten öfters zum Heiland, daß Er uns<br/>
 vor allem Schaden, der uns etwa in der folgen-<br/>
 den Nacht begegnen könnte, in Gnaden bewahren
 </p>
-</center>
+
+---
+
+class: part-slide
+count: false
+
+# Training und *Ground Truth*
+
+---
+
+# Training und *Ground Truth*
+
+- Basis der Erkennung: **trainierte** Modelle
+    + anhand manuell erstellter, fehlerfreier Daten
+- für Text
+    + Paare von Zeilenbildern und deren Text
+- für Struktur (Regionen und Zeilen)
+    + Seitenbilder und Koordinaten der Struktureinheiten
+- Algorithmus verarbeitet Abbildungen
+- bei ausreichender **Repräsentativität** des Trainingsmaterials → verbesserte Erkennung
+
+---
+
+# Training und *Ground Truth*: Beispiel
 
 ---
 
