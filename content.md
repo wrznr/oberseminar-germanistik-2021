@@ -89,6 +89,8 @@ den Nacht begegnen könnte, in Gnaden bewahren
 # Wie funktioniert's?
 
 - Schritt 1: Zeilenerkennung
+    + **regelbasierte** (Bildmorphologie) oder
+    + **datengetriebene** Verfahren (e.g. Pixelklassifikation)
 
 <center>
 <img src="img/nbg_region.png" width="400px" />
@@ -105,6 +107,8 @@ den Nacht begegnen könnte, in Gnaden bewahren
 # Wie funktioniert's?
 
 - Schritt 2: Vektorisierung
+    + **Skalierung** auf einheitliche Höhe
+    + **Unterteilung** in 1pixel-breite Streifen
 
 <center>
 <img src="img/nbg_lines.png" width="400px" />
@@ -121,6 +125,8 @@ den Nacht begegnen könnte, in Gnaden bewahren
 # Wie funktioniert's?
 
 - Schritt 2: Textermittlung
+    + **Übergangsahrscheinlichkeiten** zwischen Vektoren
+    + Wahrscheinlichkeitsverteilung über mgl. Zeichen und Zeichentrenner
 
 <center>
 <img src="img/nbg_grid.png" width="400px" />
