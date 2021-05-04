@@ -76,7 +76,7 @@ count: false
 <p>↓</p>
 </center>
 <center>
-<p style="display: inline-block; text-align: left;">
+<p style="display: inline-block; text-align: left; font-size: 16pt.; font-style: italic;">
 oberwähntem Tage mancher sorgliche Gedanke auf,<br/>
 &amp; wir seufzten öfters zum Heiland, daß Er uns<br/>
 vor allem Schaden, der uns etwa in der folgen-<br/>
@@ -135,7 +135,7 @@ den Nacht begegnen könnte, in Gnaden bewahren
 <p>↓</p>
 </center>
 <center>
-<p style="display: inline-block; text-align: left; font-size: small; font-style: italic;">
+<p style="display: inline-block; text-align: left; font-size: 16pt.; font-style: italic;">
 oberwähntem Tage mancher sorgliche Gedanke auf,<br/>
 &amp; wir seufzten öfters zum Heiland, daß Er uns<br/>
 vor allem Schaden, der uns etwa in der folgen-<br/>
@@ -150,6 +150,8 @@ den Nacht begegnen könnte, in Gnaden bewahren
 .cols[
 .fourty[
 - Schritt 3: Zeichenerkennung (Prinzip)
+    + Erkennung auf Zeilenebene
+    + Ausgabe der Zeichen mit höchster Wahrscheinlichkeit
 ]
 .sixty[
 <p style="margin-top:-20px">
@@ -358,15 +360,17 @@ class: part-slide
 # Diskussion und lose Enden
 
 - verlässliche, automatische Handschriftenerkennung in Reichweite
+- Digital Herrnhut
+    + ...
 - GT-Problematik
-    + gemischtes Vorgehen, „echte“ Ground Truth
+    + gemischtes Vorgehen
+        * existierende Kurrentdatensätze als Grundlage
+    + „echte“ Ground Truth für NBG
         * Larex zur Transkription
         * Podcasts zur indirekten Transkription
         * Einbindung von Bürgerwissenschaftlerinnen und -wissenschaftler sowie Studierende
     + synthetische Ground Truth
         * gute Kurrentschriften gesucht!
-- Digital Herrnhut
-    + ...
 
 
 ---
