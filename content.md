@@ -150,6 +150,10 @@ den Nacht begegnen könnte, in Gnaden bewahren
 - Schritt 3: Zeichenerkennung (Prinzip)
 ![](https://files.gitter.im/5b97ae51d73408ce4fa7b1ee/LYSx/lstm-fraktur-arrows.png)
 
+<center>
+<img src="https://files.gitter.im/5b97ae51d73408ce4fa7b1ee/LYSx/lstm-fraktur-arrows.png" width="500px"/>
+</center>
+
 ---
 
 # Wie funktioniert's?
@@ -299,18 +303,17 @@ legem confummans te<br/>
     + **Transfer-Learning**
         * Anpassung eines existierenden, ähnlichen Modells mit wenigen Zeilen GT auf spezifische Vorlage
         * z.B. [Konzilsprotokolle Universitätsarchiv Greifswald](https://zenodo.org/record/215383#.YJFuPHVfjDs): 8 770 Zeilen GT
-
-<center>
-<img src="https://camo.githubusercontent.com/06493331adfcac6c297a8cd048fcb77742088085c31cf7c5046c4c17c06d4bbc/68747470733a2f2f66696c65732e6769747465722e696d2f77727a6e722f744153492f4f43522d442d494d472d4445535045434b5f303030355f72315f72316c32362e706e67" width="300px"/>
-</center>
-
     + **generische Modelle**
         * auf Basis großer Mengen diversen GTs trainierte Modelle mit Allgemeinheitsanspruch 
         * schwierig im Bereich HTR
     + **synthetisches Training**
         * mit Hilfe großer Textmengen und verschiedener Computerschriftarten automatisch erzeugter GT
-        * Methoden zur Herstellung einer realistischen Optik nötig
     + **Augmentierung**
+        * größere Modellrobustheit und Variantenstabilität durch gezieltes Verrauschen
+
+<center>
+<img src="https://camo.githubusercontent.com/06493331adfcac6c297a8cd048fcb77742088085c31cf7c5046c4c17c06d4bbc/68747470733a2f2f66696c65732e6769747465722e696d2f77727a6e722f744153492f4f43522d442d494d472d4445535045434b5f303030355f72315f72316c32362e706e67" width="300px"/>
+</center>
 
 ---
 
@@ -323,8 +326,8 @@ class: part-slide
 # Struktur- und Texterfassung mit Larex
 
 - Webapplikation für bequeme/schnelle Transkription
-    + Struktur (Regionen und Zeilen)
-    + Text 
+    + Struktur- und Textebene
+- bereits am Institut für Germanistik im Einsatz
 
 ![](https://github.com/OCR4all/LAREX/raw/master/documentation/larex.gif)
 
