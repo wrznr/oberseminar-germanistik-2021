@@ -51,9 +51,11 @@ count: false
 
 # Überblick
 
-- Handschriftenerkennung: Wie funktioniert's?
-- Training und *Ground Truth*
-- Struktur- und Texterfassung mit Larex
+- erste im Rahmen des LDP digitalisierten Materialien aus dem Unitätsarchiv Herrnhut online: https://digital.slub-dresden.de/werkansicht/dlf/435266/1/
+- Ziele für heute
+    + Handschriftenerkennung: Wie funktioniert's?
+    + Training und *Ground Truth*
+    + Struktur- und Texterfassung mit Larex
 
 ---
 
